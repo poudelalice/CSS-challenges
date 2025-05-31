@@ -1,0 +1,56 @@
+/* Step 1: Define colour variables using hex values or rgb values */
+:root { 
+    /* 1a - a primary colour */
+    --primary-colour: #91085f;
+    /* 1b - a secondary colour */
+    --secondary-colour: #1ee85b;
+
+    /* 1c - a text colour */
+    --text-colour: #041d39;
+
+    /* 1d - background colour for the card */
+    --card-bg-colour: #21466c;
+} 
+
+/* Step 2: Style the card */
+body {
+    /* set background-colour to the theme primary colour */ 
+    background-color: var(--primary-colour);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: sans-serif;
+}
+
+.profile-card {
+    /* 2a - add a background color using var( )  */
+    background-color: var(--card-bg-colour);
+    /* 2b - add a background image */
+    background-image: url("download.jpg");
+
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+
+    /* 2c - define the text color using  var( )*/
+    color: var(--text-color);
+    /* 2d - add a box shadow using rgba */ 
+     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  }
+  
+  /* Step 3: Add styles for the image and text */
+    .avatar {
+        border-radius: 50%;
+        /*3a - set the border to 3px solid & secondary color */
+        border: 3px solid var(--secondary-colour);
+        /* border: */
+        width: 100px;
+        height: 100px;
+    }
+
+    .bio {
+        /* 3b -  set colour to secondary color */
+        color: var(--secondary-colour);
+    }
